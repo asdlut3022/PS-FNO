@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.log
+*.pth
+*.pt
+!results/
+!*.json
+
+# the seed-314 wave log is the only artifact for the third damped-wave seed
+# (run_statistical_tests.py parses it); keep it despite the *.log rule above.
+!results_wave/training_nt5_seed314_777.log
+
+# keep the archived result JSONs that reproduce the manuscript numbers

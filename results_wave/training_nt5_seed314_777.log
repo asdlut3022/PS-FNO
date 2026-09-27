@@ -1,0 +1,349 @@
+======================================================================
+Wave Equation: SS + AR Finetuning Experiment
+SS: 2000 epochs, AR: 800 epochs
+Seeds: [314, 777]
+======================================================================
+
+======================================================================
+SEED 314 (1/2)
+======================================================================
+Generating data...
+Generating 250 wave trajectories...
+  L-shaped domain: cut region i>=16, j>=16
+Generated 250 wave trajectories
+  c range: [0.902, 1.198]
+  gamma range: [0.201, 0.500]
+  eta (Kelvin-Voigt): 0.0800
+  normalizer scale: 1.4924
+Generating 20 wave trajectories...
+  L-shaped domain: cut region i>=16, j>=16
+Generated 20 wave trajectories
+  c range: [0.920, 1.196]
+  gamma range: [0.222, 0.491]
+  eta (Kelvin-Voigt): 0.0800
+  normalizer scale: 1.4569
+
+--- Standard FNO SS (seed 314) ---
+[WAVE_SS] Epoch 1/2000 | Loss: 0.054738 | MAE: 0.462398 | Max: 0.960017 | LR: 1.00e-03 | p: 0.90
+  -> New best! Max: 0.960017
+[WAVE_SS] Epoch 100/2000 | Loss: 0.001645 | MAE: 0.100289 | Max: 0.211402 | LR: 9.05e-04 | p: 0.90
+  -> New best! Max: 0.211402
+[WAVE_SS] Epoch 200/2000 | Loss: 0.001357 | MAE: 0.089036 | Max: 0.286837 | LR: 6.55e-04 | p: 0.90
+[WAVE_SS] Epoch 300/2000 | Loss: 0.000426 | MAE: 0.078468 | Max: 0.204406 | LR: 3.46e-04 | p: 0.90
+  -> New best! Max: 0.204406
+[WAVE_SS] Epoch 400/2000 | Loss: 0.000554 | MAE: 0.102455 | Max: 0.271599 | LR: 9.64e-05 | p: 0.90
+[WAVE_SS] Epoch 500/2000 | Loss: 0.000909 | MAE: 0.059175 | Max: 0.143637 | LR: 1.00e-03 | p: 0.90
+  -> New best! Max: 0.143637
+[WAVE_SS] Epoch 600/2000 | Loss: 0.001609 | MAE: 0.111718 | Max: 0.276443 | LR: 9.76e-04 | p: 0.84
+[WAVE_SS] Epoch 700/2000 | Loss: 0.002462 | MAE: 0.107641 | Max: 0.263856 | LR: 9.05e-04 | p: 0.78
+[WAVE_SS] Epoch 800/2000 | Loss: 0.001875 | MAE: 0.100679 | Max: 0.275754 | LR: 7.94e-04 | p: 0.72
+[WAVE_SS] Epoch 900/2000 | Loss: 0.001445 | MAE: 0.074769 | Max: 0.183008 | LR: 6.55e-04 | p: 0.66
+[WAVE_SS] Epoch 1000/2000 | Loss: 0.003894 | MAE: 0.108185 | Max: 0.318844 | LR: 5.01e-04 | p: 0.60
+[WAVE_SS] Epoch 1100/2000 | Loss: 0.003042 | MAE: 0.086540 | Max: 0.271101 | LR: 3.46e-04 | p: 0.54
+[WAVE_SS] Epoch 1200/2000 | Loss: 0.003649 | MAE: 0.073247 | Max: 0.210765 | LR: 2.07e-04 | p: 0.48
+[WAVE_SS] Epoch 1300/2000 | Loss: 0.005055 | MAE: 0.075950 | Max: 0.218879 | LR: 9.64e-05 | p: 0.42
+[WAVE_SS] Epoch 1400/2000 | Loss: 0.002027 | MAE: 0.057390 | Max: 0.175118 | LR: 2.54e-05 | p: 0.36
+[WAVE_SS] Epoch 1500/2000 | Loss: 0.001667 | MAE: 0.054436 | Max: 0.151532 | LR: 1.00e-03 | p: 0.30
+[WAVE_SS] Epoch 1600/2000 | Loss: 0.003623 | MAE: 0.131715 | Max: 0.336592 | LR: 9.94e-04 | p: 0.30
+[WAVE_SS] Epoch 1700/2000 | Loss: 0.004491 | MAE: 0.101209 | Max: 0.268986 | LR: 9.76e-04 | p: 0.30
+[WAVE_SS] Epoch 1800/2000 | Loss: 0.002668 | MAE: 0.084098 | Max: 0.231135 | LR: 9.46e-04 | p: 0.30
+[WAVE_SS] Epoch 1900/2000 | Loss: 0.003438 | MAE: 0.086344 | Max: 0.254712 | LR: 9.05e-04 | p: 0.30
+[WAVE_SS] Epoch 2000/2000 | Loss: 0.006188 | MAE: 0.123667 | Max: 0.303249 | LR: 8.54e-04 | p: 0.30
+[WAVE_SS] Best Max Error: 0.143637
+
+Standard SS (seed 314):
+  MAE:      0.011554 (physical units)
+  Avg Max:  0.064774
+  Worst Max: 0.161322
+
+--- Standard FNO AR finetune (seed 314) ---
+[WAVE_AR] Epoch 1/800 | AvgMax: 0.064498 | Max: 0.191257 | LR: 1.00e-04
+  -> New best! Max: 0.191257
+[WAVE_AR] Epoch 50/800 | AvgMax: 0.058656 | Max: 0.141188 | LR: 9.90e-05
+  -> New best! Max: 0.141188
+[WAVE_AR] Epoch 100/800 | AvgMax: 0.061022 | Max: 0.185524 | LR: 9.62e-05
+[WAVE_AR] Epoch 150/800 | AvgMax: 0.059321 | Max: 0.147031 | LR: 9.17e-05
+[WAVE_AR] Epoch 200/800 | AvgMax: 0.060694 | Max: 0.181534 | LR: 8.55e-05
+[WAVE_AR] Epoch 250/800 | AvgMax: 0.057753 | Max: 0.158294 | LR: 7.80e-05
+[WAVE_AR] Epoch 300/800 | AvgMax: 0.060341 | Max: 0.159624 | LR: 6.94e-05
+[WAVE_AR] Epoch 350/800 | AvgMax: 0.067398 | Max: 0.198816 | LR: 6.02e-05
+[WAVE_AR] Epoch 400/800 | AvgMax: 0.055116 | Max: 0.156393 | LR: 5.05e-05
+[WAVE_AR] Epoch 450/800 | AvgMax: 0.055631 | Max: 0.182364 | LR: 4.08e-05
+[WAVE_AR] Epoch 500/800 | AvgMax: 0.054049 | Max: 0.165949 | LR: 3.16e-05
+[WAVE_AR] Epoch 550/800 | AvgMax: 0.058689 | Max: 0.171498 | LR: 2.30e-05
+[WAVE_AR] Epoch 600/800 | AvgMax: 0.068574 | Max: 0.218387 | LR: 1.55e-05
+[WAVE_AR] Epoch 650/800 | AvgMax: 0.054047 | Max: 0.140457 | LR: 9.34e-06
+  -> New best! Max: 0.140457
+[WAVE_AR] Epoch 700/800 | AvgMax: 0.057760 | Max: 0.150541 | LR: 4.77e-06
+[WAVE_AR] Epoch 750/800 | AvgMax: 0.055499 | Max: 0.137151 | LR: 1.95e-06
+  -> New best! Max: 0.137151
+[WAVE_AR] Epoch 800/800 | AvgMax: 0.055323 | Max: 0.148054 | LR: 1.00e-06
+[WAVE_AR] Best Max Error: 0.137151
+
+Standard SS+AR (seed 314):
+  MAE:      0.010263 (physical units)
+  Avg Max:  0.062328
+  Worst Max: 0.167355
+
+--- Physics FNO SS (seed 314) ---
+[WAVE_SS] Epoch 1/2000 | Loss: 0.059422 | MAE: 0.593194 | Max: 1.130732 | LR: 1.00e-03 | p: 0.90
+  -> New best! Max: 1.130732
+[WAVE_SS] Epoch 100/2000 | Loss: 0.000578 | MAE: 0.102008 | Max: 0.345106 | LR: 9.05e-04 | p: 0.90
+  -> New best! Max: 0.345106
+[WAVE_SS] Epoch 200/2000 | Loss: 0.000582 | MAE: 0.074314 | Max: 0.212143 | LR: 6.55e-04 | p: 0.90
+  -> New best! Max: 0.212143
+[WAVE_SS] Epoch 300/2000 | Loss: 0.000627 | MAE: 0.063483 | Max: 0.179761 | LR: 3.46e-04 | p: 0.90
+  -> New best! Max: 0.179761
+[WAVE_SS] Epoch 400/2000 | Loss: 0.000557 | MAE: 0.071527 | Max: 0.215949 | LR: 9.64e-05 | p: 0.90
+[WAVE_SS] Epoch 500/2000 | Loss: 0.001075 | MAE: 0.060811 | Max: 0.182735 | LR: 1.00e-03 | p: 0.90
+[WAVE_SS] Epoch 600/2000 | Loss: 0.002973 | MAE: 0.109727 | Max: 0.259212 | LR: 9.76e-04 | p: 0.84
+[WAVE_SS] Epoch 700/2000 | Loss: 0.001548 | MAE: 0.077386 | Max: 0.160425 | LR: 9.05e-04 | p: 0.78
+  -> New best! Max: 0.160425
+[WAVE_SS] Epoch 800/2000 | Loss: 0.003011 | MAE: 0.186345 | Max: 0.333373 | LR: 7.94e-04 | p: 0.72
+[WAVE_SS] Epoch 900/2000 | Loss: 0.004123 | MAE: 0.117301 | Max: 0.373233 | LR: 6.55e-04 | p: 0.66
+[WAVE_SS] Epoch 1000/2000 | Loss: 0.002287 | MAE: 0.102548 | Max: 0.252786 | LR: 5.01e-04 | p: 0.60
+[WAVE_SS] Epoch 1100/2000 | Loss: 0.003502 | MAE: 0.087252 | Max: 0.271142 | LR: 3.46e-04 | p: 0.54
+[WAVE_SS] Epoch 1200/2000 | Loss: 0.004285 | MAE: 0.082203 | Max: 0.241425 | LR: 2.07e-04 | p: 0.48
+[WAVE_SS] Epoch 1300/2000 | Loss: 0.001028 | MAE: 0.069462 | Max: 0.205316 | LR: 9.64e-05 | p: 0.42
+[WAVE_SS] Epoch 1400/2000 | Loss: 0.002109 | MAE: 0.059344 | Max: 0.160985 | LR: 2.54e-05 | p: 0.36
+[WAVE_SS] Epoch 1500/2000 | Loss: 0.002247 | MAE: 0.053929 | Max: 0.144874 | LR: 1.00e-03 | p: 0.30
+  -> New best! Max: 0.144874
+[WAVE_SS] Epoch 1600/2000 | Loss: 0.003089 | MAE: 0.085035 | Max: 0.282027 | LR: 9.94e-04 | p: 0.30
+[WAVE_SS] Epoch 1700/2000 | Loss: 0.003457 | MAE: 0.097036 | Max: 0.283859 | LR: 9.76e-04 | p: 0.30
+[WAVE_SS] Epoch 1800/2000 | Loss: 0.002159 | MAE: 0.103496 | Max: 0.277983 | LR: 9.46e-04 | p: 0.30
+[WAVE_SS] Epoch 1900/2000 | Loss: 0.003675 | MAE: 0.103201 | Max: 0.316385 | LR: 9.05e-04 | p: 0.30
+[WAVE_SS] Epoch 2000/2000 | Loss: 0.004370 | MAE: 0.077639 | Max: 0.166690 | LR: 8.54e-04 | p: 0.30
+[WAVE_SS] Best Max Error: 0.144874
+
+Physics SS (seed 314):
+  MAE:      0.008199 (physical units)
+  Avg Max:  0.059311
+  Worst Max: 0.155976
+
+--- Physics FNO AR finetune (seed 314) ---
+[WAVE_AR] Epoch 1/800 | AvgMax: 0.057563 | Max: 0.142526 | LR: 1.00e-04
+  -> New best! Max: 0.142526
+[WAVE_AR] Epoch 50/800 | AvgMax: 0.055085 | Max: 0.165564 | LR: 9.90e-05
+[WAVE_AR] Epoch 100/800 | AvgMax: 0.053663 | Max: 0.160700 | LR: 9.62e-05
+[WAVE_AR] Epoch 150/800 | AvgMax: 0.053060 | Max: 0.147751 | LR: 9.17e-05
+[WAVE_AR] Epoch 200/800 | AvgMax: 0.054023 | Max: 0.159664 | LR: 8.55e-05
+[WAVE_AR] Epoch 250/800 | AvgMax: 0.050081 | Max: 0.139807 | LR: 7.80e-05
+  -> New best! Max: 0.139807
+[WAVE_AR] Epoch 300/800 | AvgMax: 0.048883 | Max: 0.131614 | LR: 6.94e-05
+  -> New best! Max: 0.131614
+[WAVE_AR] Epoch 350/800 | AvgMax: 0.053603 | Max: 0.166546 | LR: 6.02e-05
+[WAVE_AR] Epoch 400/800 | AvgMax: 0.051256 | Max: 0.158637 | LR: 5.05e-05
+[WAVE_AR] Epoch 450/800 | AvgMax: 0.048907 | Max: 0.140069 | LR: 4.08e-05
+[WAVE_AR] Epoch 500/800 | AvgMax: 0.046959 | Max: 0.121492 | LR: 3.16e-05
+  -> New best! Max: 0.121492
+[WAVE_AR] Epoch 550/800 | AvgMax: 0.045965 | Max: 0.106109 | LR: 2.30e-05
+  -> New best! Max: 0.106109
+[WAVE_AR] Epoch 600/800 | AvgMax: 0.048939 | Max: 0.137768 | LR: 1.55e-05
+[WAVE_AR] Epoch 650/800 | AvgMax: 0.047939 | Max: 0.118328 | LR: 9.34e-06
+[WAVE_AR] Epoch 700/800 | AvgMax: 0.046862 | Max: 0.107867 | LR: 4.77e-06
+[WAVE_AR] Epoch 750/800 | AvgMax: 0.047729 | Max: 0.109470 | LR: 1.95e-06
+[WAVE_AR] Epoch 800/800 | AvgMax: 0.047265 | Max: 0.103353 | LR: 1.00e-06
+  -> New best! Max: 0.103353
+[WAVE_AR] Best Max Error: 0.103353
+
+Physics SS+AR (seed 314):
+  MAE:      0.008024 (physical units)
+  Avg Max:  0.051022
+  Worst Max: 0.102648
+
+--- Seed 314 Summary ---
+  Std SS: MAE=0.0116, AvgMax=0.0648, WorstMax=0.1613
+  Std SS+AR: MAE=0.0103, AvgMax=0.0623, WorstMax=0.1674
+  Phys SS: MAE=0.0082, AvgMax=0.0593, WorstMax=0.1560
+  Phys SS+AR: MAE=0.0080, AvgMax=0.0510, WorstMax=0.1026
+
+======================================================================
+SEED 777 (2/2)
+======================================================================
+Generating data...
+Generating 250 wave trajectories...
+  L-shaped domain: cut region i>=16, j>=16
+Generated 250 wave trajectories
+  c range: [0.901, 1.197]
+  gamma range: [0.201, 0.496]
+  eta (Kelvin-Voigt): 0.0800
+  normalizer scale: 1.4985
+Generating 20 wave trajectories...
+  L-shaped domain: cut region i>=16, j>=16
+Generated 20 wave trajectories
+  c range: [0.909, 1.177]
+  gamma range: [0.205, 0.493]
+  eta (Kelvin-Voigt): 0.0800
+  normalizer scale: 1.3508
+
+--- Standard FNO SS (seed 777) ---
+[WAVE_SS] Epoch 1/2000 | Loss: 0.041174 | MAE: 0.453204 | Max: 0.907225 | LR: 1.00e-03 | p: 0.90
+  -> New best! Max: 0.907225
+[WAVE_SS] Epoch 100/2000 | Loss: 0.000709 | MAE: 0.084160 | Max: 0.228536 | LR: 9.05e-04 | p: 0.90
+  -> New best! Max: 0.228536
+[WAVE_SS] Epoch 200/2000 | Loss: 0.000644 | MAE: 0.071739 | Max: 0.209449 | LR: 6.55e-04 | p: 0.90
+  -> New best! Max: 0.209449
+[WAVE_SS] Epoch 300/2000 | Loss: 0.000337 | MAE: 0.066087 | Max: 0.169317 | LR: 3.46e-04 | p: 0.90
+  -> New best! Max: 0.169317
+[WAVE_SS] Epoch 400/2000 | Loss: 0.001017 | MAE: 0.076655 | Max: 0.216127 | LR: 9.64e-05 | p: 0.90
+[WAVE_SS] Epoch 500/2000 | Loss: 0.001146 | MAE: 0.061306 | Max: 0.145046 | LR: 1.00e-03 | p: 0.90
+  -> New best! Max: 0.145046
+[WAVE_SS] Epoch 600/2000 | Loss: 0.002252 | MAE: 0.109329 | Max: 0.310454 | LR: 9.76e-04 | p: 0.84
+[WAVE_SS] Epoch 700/2000 | Loss: 0.001073 | MAE: 0.127508 | Max: 0.279822 | LR: 9.05e-04 | p: 0.78
+[WAVE_SS] Epoch 800/2000 | Loss: 0.001730 | MAE: 0.087226 | Max: 0.195161 | LR: 7.94e-04 | p: 0.72
+[WAVE_SS] Epoch 900/2000 | Loss: 0.001406 | MAE: 0.093733 | Max: 0.223822 | LR: 6.55e-04 | p: 0.66
+[WAVE_SS] Epoch 1000/2000 | Loss: 0.001693 | MAE: 0.087193 | Max: 0.211010 | LR: 5.01e-04 | p: 0.60
+[WAVE_SS] Epoch 1100/2000 | Loss: 0.001650 | MAE: 0.070476 | Max: 0.204236 | LR: 3.46e-04 | p: 0.54
+[WAVE_SS] Epoch 1200/2000 | Loss: 0.001367 | MAE: 0.098306 | Max: 0.236400 | LR: 2.07e-04 | p: 0.48
+[WAVE_SS] Epoch 1300/2000 | Loss: 0.003477 | MAE: 0.074625 | Max: 0.219654 | LR: 9.64e-05 | p: 0.42
+[WAVE_SS] Epoch 1400/2000 | Loss: 0.002610 | MAE: 0.058502 | Max: 0.172304 | LR: 2.54e-05 | p: 0.36
+[WAVE_SS] Epoch 1500/2000 | Loss: 0.002636 | MAE: 0.056190 | Max: 0.181901 | LR: 1.00e-03 | p: 0.30
+[WAVE_SS] Epoch 1600/2000 | Loss: 0.003167 | MAE: 0.109561 | Max: 0.296859 | LR: 9.94e-04 | p: 0.30
+[WAVE_SS] Epoch 1700/2000 | Loss: 0.004308 | MAE: 0.128144 | Max: 0.277670 | LR: 9.76e-04 | p: 0.30
+[WAVE_SS] Epoch 1800/2000 | Loss: 0.004325 | MAE: 0.092237 | Max: 0.302407 | LR: 9.46e-04 | p: 0.30
+[WAVE_SS] Epoch 1900/2000 | Loss: 0.009760 | MAE: 0.113721 | Max: 0.353887 | LR: 9.05e-04 | p: 0.30
+[WAVE_SS] Epoch 2000/2000 | Loss: 0.003044 | MAE: 0.076908 | Max: 0.194730 | LR: 8.54e-04 | p: 0.30
+[WAVE_SS] Best Max Error: 0.145046
+
+Standard SS (seed 777):
+  MAE:      0.011337 (physical units)
+  Avg Max:  0.056568
+  Worst Max: 0.113410
+
+--- Standard FNO AR finetune (seed 777) ---
+[WAVE_AR] Epoch 1/800 | AvgMax: 0.062122 | Max: 0.164923 | LR: 1.00e-04
+  -> New best! Max: 0.164923
+[WAVE_AR] Epoch 50/800 | AvgMax: 0.062599 | Max: 0.162243 | LR: 9.90e-05
+  -> New best! Max: 0.162243
+[WAVE_AR] Epoch 100/800 | AvgMax: 0.062500 | Max: 0.157417 | LR: 9.62e-05
+  -> New best! Max: 0.157417
+[WAVE_AR] Epoch 150/800 | AvgMax: 0.063140 | Max: 0.174290 | LR: 9.17e-05
+[WAVE_AR] Epoch 200/800 | AvgMax: 0.066177 | Max: 0.194611 | LR: 8.55e-05
+[WAVE_AR] Epoch 250/800 | AvgMax: 0.064242 | Max: 0.180374 | LR: 7.80e-05
+[WAVE_AR] Epoch 300/800 | AvgMax: 0.058013 | Max: 0.163904 | LR: 6.94e-05
+[WAVE_AR] Epoch 350/800 | AvgMax: 0.057884 | Max: 0.160061 | LR: 6.02e-05
+[WAVE_AR] Epoch 400/800 | AvgMax: 0.061680 | Max: 0.172188 | LR: 5.05e-05
+[WAVE_AR] Epoch 450/800 | AvgMax: 0.066565 | Max: 0.191873 | LR: 4.08e-05
+[WAVE_AR] Epoch 500/800 | AvgMax: 0.054832 | Max: 0.146615 | LR: 3.16e-05
+  -> New best! Max: 0.146615
+[WAVE_AR] Epoch 550/800 | AvgMax: 0.056471 | Max: 0.137986 | LR: 2.30e-05
+  -> New best! Max: 0.137986
+[WAVE_AR] Epoch 600/800 | AvgMax: 0.055145 | Max: 0.145232 | LR: 1.55e-05
+[WAVE_AR] Epoch 650/800 | AvgMax: 0.053784 | Max: 0.123171 | LR: 9.34e-06
+  -> New best! Max: 0.123171
+[WAVE_AR] Epoch 700/800 | AvgMax: 0.054766 | Max: 0.137024 | LR: 4.77e-06
+[WAVE_AR] Epoch 750/800 | AvgMax: 0.053342 | Max: 0.132110 | LR: 1.95e-06
+[WAVE_AR] Epoch 800/800 | AvgMax: 0.053385 | Max: 0.123299 | LR: 1.00e-06
+[WAVE_AR] Best Max Error: 0.123171
+
+Standard SS+AR (seed 777):
+  MAE:      0.009358 (physical units)
+  Avg Max:  0.051739
+  Worst Max: 0.121127
+
+--- Physics FNO SS (seed 777) ---
+[WAVE_SS] Epoch 1/2000 | Loss: 0.058379 | MAE: 0.456807 | Max: 0.919902 | LR: 1.00e-03 | p: 0.90
+  -> New best! Max: 0.919902
+[WAVE_SS] Epoch 100/2000 | Loss: 0.001327 | MAE: 0.113110 | Max: 0.263282 | LR: 9.05e-04 | p: 0.90
+  -> New best! Max: 0.263282
+[WAVE_SS] Epoch 200/2000 | Loss: 0.000773 | MAE: 0.070273 | Max: 0.195013 | LR: 6.55e-04 | p: 0.90
+  -> New best! Max: 0.195013
+[WAVE_SS] Epoch 300/2000 | Loss: 0.000294 | MAE: 0.064818 | Max: 0.205462 | LR: 3.46e-04 | p: 0.90
+[WAVE_SS] Epoch 400/2000 | Loss: 0.000723 | MAE: 0.070712 | Max: 0.195578 | LR: 9.64e-05 | p: 0.90
+[WAVE_SS] Epoch 500/2000 | Loss: 0.000823 | MAE: 0.058583 | Max: 0.149915 | LR: 1.00e-03 | p: 0.90
+  -> New best! Max: 0.149915
+[WAVE_SS] Epoch 600/2000 | Loss: 0.001279 | MAE: 0.135886 | Max: 0.318222 | LR: 9.76e-04 | p: 0.84
+[WAVE_SS] Epoch 700/2000 | Loss: 0.002315 | MAE: 0.142747 | Max: 0.325221 | LR: 9.05e-04 | p: 0.78
+[WAVE_SS] Epoch 800/2000 | Loss: 0.002061 | MAE: 0.086358 | Max: 0.296959 | LR: 7.94e-04 | p: 0.72
+[WAVE_SS] Epoch 900/2000 | Loss: 0.001692 | MAE: 0.078241 | Max: 0.228696 | LR: 6.55e-04 | p: 0.66
+[WAVE_SS] Epoch 1000/2000 | Loss: 0.003079 | MAE: 0.108057 | Max: 0.227589 | LR: 5.01e-04 | p: 0.60
+[WAVE_SS] Epoch 1100/2000 | Loss: 0.001831 | MAE: 0.069090 | Max: 0.200797 | LR: 3.46e-04 | p: 0.54
+[WAVE_SS] Epoch 1200/2000 | Loss: 0.001710 | MAE: 0.067472 | Max: 0.161394 | LR: 2.07e-04 | p: 0.48
+[WAVE_SS] Epoch 1300/2000 | Loss: 0.003013 | MAE: 0.080448 | Max: 0.230170 | LR: 9.64e-05 | p: 0.42
+[WAVE_SS] Epoch 1400/2000 | Loss: 0.002409 | MAE: 0.057863 | Max: 0.149830 | LR: 2.54e-05 | p: 0.36
+  -> New best! Max: 0.149830
+[WAVE_SS] Epoch 1500/2000 | Loss: 0.002774 | MAE: 0.056131 | Max: 0.150704 | LR: 1.00e-03 | p: 0.30
+[WAVE_SS] Epoch 1600/2000 | Loss: 0.003215 | MAE: 0.081666 | Max: 0.259425 | LR: 9.94e-04 | p: 0.30
+[WAVE_SS] Epoch 1700/2000 | Loss: 0.005404 | MAE: 0.097734 | Max: 0.312170 | LR: 9.76e-04 | p: 0.30
+[WAVE_SS] Epoch 1800/2000 | Loss: 0.004059 | MAE: 0.086369 | Max: 0.249524 | LR: 9.46e-04 | p: 0.30
+[WAVE_SS] Epoch 1900/2000 | Loss: 0.005634 | MAE: 0.080512 | Max: 0.198982 | LR: 9.05e-04 | p: 0.30
+[WAVE_SS] Epoch 2000/2000 | Loss: 0.008643 | MAE: 0.077171 | Max: 0.221228 | LR: 8.54e-04 | p: 0.30
+[WAVE_SS] Best Max Error: 0.149830
+
+Physics SS (seed 777):
+  MAE:      0.009092 (physical units)
+  Avg Max:  0.061335
+  Worst Max: 0.122503
+
+--- Physics FNO AR finetune (seed 777) ---
+[WAVE_AR] Epoch 1/800 | AvgMax: 0.058567 | Max: 0.163858 | LR: 1.00e-04
+  -> New best! Max: 0.163858
+[WAVE_AR] Epoch 50/800 | AvgMax: 0.052742 | Max: 0.138514 | LR: 9.90e-05
+  -> New best! Max: 0.138514
+[WAVE_AR] Epoch 100/800 | AvgMax: 0.056639 | Max: 0.173083 | LR: 9.62e-05
+[WAVE_AR] Epoch 150/800 | AvgMax: 0.053293 | Max: 0.166922 | LR: 9.17e-05
+[WAVE_AR] Epoch 200/800 | AvgMax: 0.052796 | Max: 0.151557 | LR: 8.55e-05
+[WAVE_AR] Epoch 250/800 | AvgMax: 0.053039 | Max: 0.160605 | LR: 7.80e-05
+[WAVE_AR] Epoch 300/800 | AvgMax: 0.050215 | Max: 0.129915 | LR: 6.94e-05
+  -> New best! Max: 0.129915
+[WAVE_AR] Epoch 350/800 | AvgMax: 0.059267 | Max: 0.177458 | LR: 6.02e-05
+[WAVE_AR] Epoch 400/800 | AvgMax: 0.049422 | Max: 0.131740 | LR: 5.05e-05
+[WAVE_AR] Epoch 450/800 | AvgMax: 0.050192 | Max: 0.150819 | LR: 4.08e-05
+[WAVE_AR] Epoch 500/800 | AvgMax: 0.046471 | Max: 0.121244 | LR: 3.16e-05
+  -> New best! Max: 0.121244
+[WAVE_AR] Epoch 550/800 | AvgMax: 0.047148 | Max: 0.128769 | LR: 2.30e-05
+[WAVE_AR] Epoch 600/800 | AvgMax: 0.048527 | Max: 0.127668 | LR: 1.55e-05
+[WAVE_AR] Epoch 650/800 | AvgMax: 0.048374 | Max: 0.125072 | LR: 9.34e-06
+[WAVE_AR] Epoch 700/800 | AvgMax: 0.049093 | Max: 0.121905 | LR: 4.77e-06
+[WAVE_AR] Epoch 750/800 | AvgMax: 0.048485 | Max: 0.120620 | LR: 1.95e-06
+  -> New best! Max: 0.120620
+[WAVE_AR] Epoch 800/800 | AvgMax: 0.047926 | Max: 0.114095 | LR: 1.00e-06
+  -> New best! Max: 0.114095
+[WAVE_AR] Best Max Error: 0.114095
+
+Physics SS+AR (seed 777):
+  MAE:      0.007842 (physical units)
+  Avg Max:  0.053031
+  Worst Max: 0.109887
+
+--- Seed 777 Summary ---
+  Std SS: MAE=0.0113, AvgMax=0.0566, WorstMax=0.1134
+  Std SS+AR: MAE=0.0094, AvgMax=0.0517, WorstMax=0.1211
+  Phys SS: MAE=0.0091, AvgMax=0.0613, WorstMax=0.1225
+  Phys SS+AR: MAE=0.0078, AvgMax=0.0530, WorstMax=0.1099
+
+======================================================================
+WAVE SS+AR RESULTS SUMMARY
+======================================================================
+
+Method comparison (three-seed average):
+  Std SS      : MAE=0.0114, AvgMax=0.0607, WorstMax=0.1374
+  Std SS+AR   : MAE=0.0098, AvgMax=0.0570, WorstMax=0.1442
+  Phys SS     : MAE=0.0086, AvgMax=0.0603, WorstMax=0.1392
+  Phys SS+AR  : MAE=0.0079, AvgMax=0.0520, WorstMax=0.1063
+
+  MAE:
+    Physics SS improvement over Std SS:     +24.5%
+    Physics SS+AR improvement over Std SS+AR: +19.1%
+    AR finetune gain for Physics:          +8.2%
+
+  AvgMax:
+    Physics SS improvement over Std SS:     +0.6%
+    Physics SS+AR improvement over Std SS+AR: +8.8%
+    AR finetune gain for Physics:          +13.8%
+
+  WorstMax:
+    Physics SS improvement over Std SS:     -1.4%
+    Physics SS+AR improvement over Std SS+AR: +26.3%
+    AR finetune gain for Physics:          +23.7%
+
+Results saved to: <repo>/results_wave/wave_ar_results.json
+
+======================================================================
+Generating comparison figure (seed 42, SS+AR)...
+Selected trajectory 15: Std WorstMax=0.1674, Phys WorstMax=0.1026
+Figure saved to: figures/fig_wave_field.pdf
+
+======================================================================
+DONE.
+======================================================================

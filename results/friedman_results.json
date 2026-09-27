@@ -1,0 +1,89 @@
+{
+ "benchmarks": [
+  "diffusion-heat",
+  "conv-diff",
+  "reaction-diff",
+  "damped-wave"
+ ],
+ "methods": [
+  "Standard FNO",
+  "PS-FNO",
+  "DeepONet",
+  "PINO",
+  "POD-RBF",
+  "F-FNO"
+ ],
+ "matrix": {
+  "diffusion-heat": {
+   "Standard FNO": 1.0539652506510417,
+   "PS-FNO": 0.9215087890625,
+   "DeepONet": 2.170562744140625,
+   "PINO": 1.6484375,
+   "POD-RBF": 3.426824748345041,
+   "F-FNO": 1.6319478352864583
+  },
+  "conv-diff": {
+   "Standard FNO": 3.3655802408854165,
+   "PS-FNO": 1.7462972005208333,
+   "DeepONet": 3.570037841796875,
+   "PINO": 44.54986572265625,
+   "POD-RBF": 4.785460508085521,
+   "F-FNO": 3.0888671875
+  },
+  "reaction-diff": {
+   "Standard FNO": 2.5029398600260415,
+   "PS-FNO": 1.8758341471354167,
+   "DeepONet": 4.749908447265625,
+   "PINO": 44.127655029296875,
+   "POD-RBF": 3.6163396723173378,
+   "F-FNO": 2.3063761393229165
+  },
+  "damped-wave": {
+   "Standard FNO": 0.12653260843753814,
+   "PS-FNO": 0.09413388096491497,
+   "DeepONet": 0.729349672794342,
+   "PINO": 93.9359130859375,
+   "POD-RBF": 0.29334477458334723,
+   "F-FNO": 0.13462798794110617
+  }
+ },
+ "chi2": 17.57142857142857,
+ "p": 0.003534379129215689,
+ "df": 5,
+ "mean_ranks": {
+  "Standard FNO": 2.5,
+  "PS-FNO": 1.0,
+  "DeepONet": 4.75,
+  "PINO": 5.5,
+  "POD-RBF": 4.75,
+  "F-FNO": 2.5
+ },
+ "cell_policy": "Standard/PS-FNO/F-FNO = 3-seed mean WorstMax; DeepONet/PINO/POD-RBF = seed-42 single value; PINO-heat = tuned config (pino_final_results.json); POD-RBF conv-diff from podrbf_deterministic_results.json",
+ "provenance": {
+  "standard_physics": "benchmarks dict (same sources as primary Wilcoxon)",
+  "ffno": {
+   "diffusion-heat": "results/ffno_heat_results.json",
+   "conv-diff": "results/ffno_convdiff_results.json",
+   "reaction-diff": "results/ffno_reactiondiff_results.json",
+   "damped-wave": "results/ffno_wave_results.json"
+  },
+  "deeponet": {
+   "diffusion-heat": "results/baseline_results.json",
+   "conv-diff": "results/baselines_convdiff_results.json",
+   "reaction-diff": "results/baselines_reactiondiff_results.json",
+   "damped-wave": "results/baselines_wave_results.json"
+  },
+  "pino": {
+   "diffusion-heat": "results/pino_final_results.json",
+   "conv-diff": "results/baselines_convdiff_results.json",
+   "reaction-diff": "results/baselines_reactiondiff_results.json",
+   "damped-wave": "results/baselines_wave_results.json"
+  },
+  "podrbf": {
+   "diffusion-heat": "results/baselines_heat_pino_podrbf_results.json",
+   "conv-diff": "results/podrbf_deterministic_results.json",
+   "reaction-diff": "results/baselines_reactiondiff_results.json",
+   "damped-wave": "results/baselines_wave_results.json"
+  }
+ }
+}

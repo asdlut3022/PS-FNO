@@ -1,0 +1,38 @@
+{
+  "DeepONet": {
+    "n_params": 10631170,
+    "train_time_s": 512.94,
+    "peak_memory_gb": 2.479,
+    "infer_ms_per_step": 0.831,
+    "test": {
+      "mae": 0.6597760915756226,
+      "worst_max": 10.384521484375
+    }
+  },
+  "PINO": {
+    "n_params": 23644706,
+    "train_time_s": 1849.33,
+    "peak_memory_gb": 1.285,
+    "infer_ms_per_step": 3.085,
+    "test": {
+      "mae": 7.54158878326416,
+      "worst_max": 65.13594055175781
+    }
+  },
+  "POD-RBF": {
+    "n_modes": 50,
+    "fit_time_s": 0.504,
+    "peak_memory_gb_cpu_rss": 1.247,
+    "infer_time_total_s": 0.0441,
+    "test": {
+      "mae": 0.13549576227442092,
+      "worst_max": 3.426826651094359
+    }
+  },
+  "protocol": {
+    "gpu": "NVIDIA RTX 4070 (exclusive)",
+    "memory": "torch.cuda.max_memory_allocated over 50-epoch window (epoch 0-50), batch size 8",
+    "train_time": "wall-clock over full 2000-epoch scheduled-sampling training (heat, seed 42)",
+    "podrbf_memory": "peak process RSS during CPU fit (scipy svds + RBFInterpolator)"
+  }
+}

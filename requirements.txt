@@ -1,0 +1,11 @@
+# Reported-environment description, not a pinned environment specification.
+# These are loose lower bounds: exact versions are not pinned and the transitive dependency
+# set is not captured, so this file is not sufficient to reconstruct a byte-identical
+# environment. The versions actually used for the reported results are listed in README.md
+# under "Environment used for the reported results". Reading the archived records needs no
+# dependency upgrade.
+torch>=2.0
+numpy
+scipy
+numba
+matplotlib

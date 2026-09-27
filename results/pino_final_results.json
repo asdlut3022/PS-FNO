@@ -1,0 +1,18 @@
+{
+  "PINO_selfnorm": {
+    "n_params": 23644706,
+    "train_time": 1804.2358119487762,
+    "test": {
+      "mae": 0.16487222909927368,
+      "worst_max": 1.6484375
+    },
+    "infer_ms": 2.9996278285980225,
+    "config": {
+      "pde_start": 500,
+      "pde_ramp_end": 1000,
+      "lambda_pde_target": 0.1,
+      "self_normalize": true,
+      "pde_ema_decay": 0.99
+    }
+  }
+}
